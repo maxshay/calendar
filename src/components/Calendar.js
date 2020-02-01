@@ -15,8 +15,8 @@ export class Calendar extends Component {
       window.addEventListener('resize', this.updateWindowDimensions);
 
       // api call
-      const calenderId = "cm22dbjn9u2jflvk770q69d0a0@group.calendar.google.com";
-      let apikey = "AIzaSyBBI89qYlbCkri8HXHpPYNEiTscXVIkKYE";
+      const calenderId = "GROUP_KEY@group.calendar.google.com";
+      let apikey = "API_KEY";
       let dateArray = [];
       axios.get(`https://www.googleapis.com/calendar/v3/calendars/${calenderId}/events?key=${apikey}`)
         .then(res => {
